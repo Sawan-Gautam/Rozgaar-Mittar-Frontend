@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color:#FFFFFF
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.custom-bg {
+  background-color: #FCFFE7;
+} 
+
+.text-color {
+  color:#25493F;
+}
+
+.border-color {
+  border-color: #25493F;
+}
+
+.custom-bg-text {
+  color:#FCFFE7;
+}
+
+.bg-color {
+  background-color: #EB455F;
+}
+
+.text-color-second {
+  color:#EB455F;
+}
+
+.rounded-card {
+  padding: 1.5em .5em .5em;
+  border-radius: 2em;
+  box-shadow: 0 5px 10px #00000033;
+}
+
+.form-card {
+  padding: .2em .2em .2em;
+  border-radius: 1em;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Adjust the values here */
+}
+
+.job-card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.job-card:hover {
+  transform: scale(1.02); /* You can adjust the scale factor for the desired hover effect */
+}
+
+.profile-photo {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+  border: 3px solid #EB455F; /* Add a border with white color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box-shadow */
+  border-radius: 50%; /* Ensure it stays circular */
+}
+
+/* ===================== */
+/* NAVBAR LINK HOVER     */
+/* ===================== */
+.nav-link {
+  transition: color 0.2s ease, background-color 0.2s ease;
+  border-radius: 6px;
+  padding: 6px 10px !important;
+}
+
+.nav-link:hover {
+  color: #EB455F !important;
+  background-color: rgba(235, 69, 95, 0.1);
+}
+
+/* ===================== */
+/* BUTTON HOVER          */
+/* ===================== */
+.btn.bg-color {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.btn.bg-color:hover {
+  background-color: #c73550 !important;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(235, 69, 95, 0.4);
+  color: #FCFFE7 !important;
+}
+
+/* ===================== */
+/* TABLE ROW HOVER       */
+/* ===================== */
+.table-hover tbody tr:hover {
+  background-color: rgba(235, 69, 95, 0.08) !important;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* ===================== */
+/* CLICKABLE TEXT HOVER  */
+/* ===================== */
+.text-color-second:hover,
+b.text-color:hover {
+  color: #c73550 !important;
+  cursor: pointer;
+  text-decoration: underline;
+}
