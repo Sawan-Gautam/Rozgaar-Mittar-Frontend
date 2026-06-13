@@ -86,28 +86,28 @@ const AddJobForm = () => {
 
   const retrieveAllCategories = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/job/category/fetch/all"
+      "https://rozgaar-mittar-production.up.railway.app/api/job/category/fetch/all"
     );
     return response.data;
   };
   
   const retrieveAllJobTypes = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/helper/job/type/fetch/all"
+      "https://rozgaar-mittar-production.up.railway.app/api/helper/job/type/fetch/all"
     );
     return response.data;
   };
   
   const retrieveAllSalary = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/helper/job/salary/range/fetch/all"
+      "https://rozgaar-mittar-production.up.railway.app/api/helper/job/salary/range/fetch/all"
     );
     return response.data;
   };
 
   const retrieveAllExperience = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/helper/job/expereince/fetch/all"
+      "https://rozgaar-mittar-production.up.railway.app/api/helper/job/expereince/fetch/all"
     );
     return response.data;
   };
@@ -179,7 +179,7 @@ const AddJobForm = () => {
     formData.append("country", values.country);
 
     axios
-      .post("http://localhost:8080/api/job/add", formData, {
+      .post("https://rozgaar-mittar-production.up.railway.app/api/job/add", formData, {
         headers: {
           Authorization: "Bearer " + employer_jwtToken,
         },

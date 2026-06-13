@@ -24,7 +24,7 @@ const JobCard = (job) => {
           {/* Left side - Company Logo */}
           <div className="col-md-4 d-flex align-items-center justify-content-center">
             <img
-              src={"http://localhost:8080/api/job/" + job.item.companyLogo}
+              src={"https://rozgaar-mittar-production.up.railway.app/api/job/" + job.item.companyLogo}
               className="card-img-top rounded img-fluid"
               alt="Company Logo"
             />

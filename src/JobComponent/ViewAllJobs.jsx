@@ -71,7 +71,7 @@ const ViewAllJobs = () => {
   }, []);
 
   const retrieveAllJobs = async () => {
-    const response = await axios.get("http://localhost:8080/api/job/fetch/all");
+    const response = await axios.get("https://rozgaar-mittar-production.up.railway.app/api/job/fetch/all");
     console.log(response.data);
     return response.data;
   };
@@ -139,7 +139,7 @@ const ViewAllJobs = () => {
                       <td>
                         <img
                           src={
-                            "http://localhost:8080/api/job/" + job.companyLogo
+                            "https://rozgaar-mittar-production.up.railway.app/api/job/" + job.companyLogo
                           }
                           class="img-fluid"
                           alt="food_pic"

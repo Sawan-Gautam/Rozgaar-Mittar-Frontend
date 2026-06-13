@@ -78,7 +78,7 @@ const JobDetailPage = () => {
 
   const retrieveJob = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/job/fetch?jobId=" + jobId
+      "https://rozgaar-mittar-production.up.railway.app/api/job/fetch?jobId=" + jobId
     );
     console.log(response.data);
     return response.data;
@@ -107,7 +107,7 @@ const JobDetailPage = () => {
       jobApplyRequest.employeeId = employee.id;
       jobApplyRequest.jobId = jobId;
 
-      fetch("http://localhost:8080/api/job/application/add", {
+      fetch("https://rozgaar-mittar-production.up.railway.app/api/job/application/add", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -195,7 +195,7 @@ const JobDetailPage = () => {
                   {/* Left side - Company Logo */}
                   <div className="col-md-4 d-flex align-items-center justify-content-center">
                     <img
-                      src={"http://localhost:8080/api/job/" + job.companyLogo}
+                      src={"https://rozgaar-mittar-production.up.railway.app/api/job/" + job.companyLogo}
                       className="card-img-top rounded img-fluid"
                       alt="Company Logo"
                       style={{

@@ -72,7 +72,7 @@ const ViewEmployerJobs = () => {
 
   const retrieveAllJobs = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/job/fetch/employer-wise?employerId=" +
+      "https://rozgaar-mittar-production.up.railway.app/api/job/fetch/employer-wise?employerId=" +
         employer.id,
       {
         headers: {
@@ -85,7 +85,7 @@ const ViewEmployerJobs = () => {
   };
 
   const deleteJob = (jobId, e) => {
-    fetch("http://localhost:8080/api/job/delete?jobId=" + jobId, {
+    fetch("https://rozgaar-mittar-production.up.railway.app/api/job/delete?jobId=" + jobId, {
       method: "DELETE",
       headers: {
         Accept: "application/json",
@@ -205,7 +205,7 @@ const ViewEmployerJobs = () => {
                       <td>
                         <img
                           src={
-                            "http://localhost:8080/api/job/" + job.companyLogo
+                            "https://rozgaar-mittar-production.up.railway.app/api/job/" + job.companyLogo
                           }
                           class="img-fluid"
                           alt="company_logo"
