@@ -106,7 +106,7 @@ const UserRegister = () => {
       return;
     }
 
-    fetch("http://localhost:8080/api/user/verify-email", {
+    fetch("http://https://rozgaar-mittar-production.up.railway.app/api/user/verify-email", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ emailId: formik.values.emailId }),
@@ -160,7 +160,7 @@ const UserRegister = () => {
       role: userRole,
     };
 
-    fetch("http://localhost:8080/api/user/register", {
+    fetch("http://https://rozgaar-mittar-production.up.railway.app/api/user/register", {
       method: "POST",
       headers: {
         Accept: "application/json",
