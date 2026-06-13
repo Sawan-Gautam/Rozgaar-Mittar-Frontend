@@ -33,7 +33,7 @@ const UserLoginForm = () => {
   });
 
   const loginAction = (loginRequest) => {
-    fetch("http://localhost:8080/api/user/login", {
+    fetch("https://rozgaar-mittar-production.up.railway.app/api/user/login", {
       method: "POST",
       headers: {
         Accept: "application/json",
